@@ -5,7 +5,7 @@ import { useAuthStore } from "../store/useAuthStore";
 
 const defaultMaleImage = "/assets/default-male.jpg";
 const defaultFemaleImage = "/assets/default-female.jpg";
- 
+  
 const ChatHeader = () => {
   const { selectedUser } = useChatStore();
   const { onlineUsers } = useAuthStore();

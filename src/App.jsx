@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import Signup from "./auth/SignUp";
 import Login from "./auth/Login";
-import { Button } from "./components/ui/button";
 import "./App.css";
 import { Toaster } from "sonner";
 import { useEffect } from "react";
@@ -18,7 +17,12 @@ import { useAuthStore } from "./store/useAuthStore";
 const Home = () => {
   const navigate = useNavigate();
 
-  return <Button onClick={() => navigate("/signup")}>Let's Start</Button>;
+  return <a
+  onClick={() => navigate("/signup")}
+  className="bg-black text-white py-2 px-4 rounded-md text-lg cursor-pointer inline-block"
+>
+  Let's Start
+</a>
 };
 
 function App() {

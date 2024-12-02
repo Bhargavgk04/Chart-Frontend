@@ -19,9 +19,9 @@ function App() {
 
   console.log({ onlineUsers });
 
-  useEffect(() => {
-    checkAuth();
-  }, [checkAuth]);
+  // useEffect(() => {
+  //   checkAuth();
+  // }, [checkAuth]);
 
   return (
     <>

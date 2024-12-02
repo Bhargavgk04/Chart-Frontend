@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "npx vite",
-    "build": "npm install && npm install -g vite",
+    "build": "npm install && npm install -g vite && npm i react-router-dom axios @radix-ui/react-slot @reduxjs/toolkit @testing-library/jest-dom @testing-library/jest-dom @testing-library/react @testing-library/user-event class-variance-authority clsx lucide-react react react-dom react-hot-toast react-icons react-redux react-scripts redux-persist socket.io-client sonner tailwind-merge tailwindcss-animate web-vitals zustand",
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "vite start"

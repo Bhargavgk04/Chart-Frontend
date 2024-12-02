@@ -14,25 +14,6 @@ import StudentCards from "./components/StudentCards";
 import ChatBox from "./components/ChatBox";
 import { useAuthStore } from "./store/useAuthStore";
 
-const Home = () => {
-  const navigate = useNavigate();
-
-  const handleClick = (event) => {
-    event.preventDefault(); // Prevent default anchor behavior
-    navigate("/signup"); // Navigate to /signup route
-  };
-  
-  return (
-    <a
-      href="/signup" // Optional, but helps for SEO and accessibility
-      onClick={handleClick}
-      className="bg-black text-white py-2 px-4 rounded-md text-lg cursor-pointer inline-block"
-    >
-      Let's Start
-    </a>
-  );
-};
-
 function App() {
   const { authUser, checkAuth, isCheckingAuth, onlineUsers } = useAuthStore();
 
@@ -46,7 +27,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/studentslist" element={<StudentCards />} />

@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "npx vite",
+    "build": "npm install && npm install -g vite",
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "vite start"

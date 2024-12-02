@@ -4,8 +4,8 @@ import { io } from "socket.io-client";
 import { toast } from "sonner";
 
 const BASE_URL =
-  import.meta.env.MODE === "development" ? "https://chat-backend-tp7g.onrender.com" : "/";
-
+  import.meta.env.MODE === "development" ? "https://chat-backend-lxu9.onrender.com" : "/";
+  
 export const useAuthStore = create((set, get) => ({
   authUser: null,
   isSigningUp: false,

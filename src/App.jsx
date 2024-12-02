@@ -17,12 +17,20 @@ import { useAuthStore } from "./store/useAuthStore";
 const Home = () => {
   const navigate = useNavigate();
 
-  return <a
-  onClick={() => navigate("/signup")}
-  className="bg-black text-white py-2 px-4 rounded-md text-lg cursor-pointer inline-block"
->
-  Let's Start
-</a>
+  const handleClick = (event) => {
+    event.preventDefault(); // Prevent default anchor behavior
+    navigate("/signup"); // Navigate to /signup route
+  };
+  
+  return (
+    <a
+      href="/signup" // Optional, but helps for SEO and accessibility
+      onClick={handleClick}
+      className="bg-black text-white py-2 px-4 rounded-md text-lg cursor-pointer inline-block"
+    >
+      Let's Start
+    </a>
+  );
 };
 
 function App() {
